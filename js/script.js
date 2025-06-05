@@ -77,6 +77,47 @@ function mostrarError(mensaje) {
     resultadosDiv.innerHTML = `<p>${mensaje}</p>`;
 }
 
+/**
+ * Dibuja el tablero de ajedrez dinámicamente y coloca el caballo en la posición actual.
+ * Si no hay posición válida (filaCaballoActual es -1), dibuja un tablero vacío.
+ */
+function dibujarTablero() {
+    const tableroDiv = document.getElementById('tablero-ajedrez');
+    tableroDiv.innerHTML = ''; // Limpiar cualquier tablero anterior
+
+   
+    for (let fila = 1; fila <= 8; fila++) {
+        for (let col = 1; col <= 8; col++) {
+            const celda = document.createElement('div');
+            celda.classList.add('celda'); 
+
+            
+            if ((fila + col) % 2 === 0) {
+                celda.classList.add('celda-clara');
+            } else {
+                celda.classList.add('celda-oscura');
+            }
+          
+            celda.id = `celda-${fila}-${col}`;
+            tableroDiv.appendChild(celda);
+        }
+    }
+
+    // Colocar el caballo si hay una posición válida definida globalmente
+    if (esCoordenadaValida(filaCaballoActual) && esCoordenadaValida(columnaCaballoActual)) {
+        const celdaCaballo = document.getElementById(`celda-${filaCaballoActual}-${columnaCaballoActual}`);
+        if (celdaCaballo) { // Asegurarse de que la celda exista
+            const caballoImg = document.createElement('img');
+    
+            caballoImg.src = 'https://upload.wikimedia.org/wikipedia/commons/4/42/Chess_nlt45.svg';
+            caballoImg.alt = 'Caballo de ajedrez';
+            caballoImg.classList.add('caballo-img');
+            celdaCaballo.appendChild(caballoImg);
+        }
+    }
+}
+
+
 document.addEventListener('DOMContentLoaded', () => {
   
     const botonCalcular = document.getElementById('btn-calcular');
