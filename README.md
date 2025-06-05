@@ -1,13 +1,13 @@
 # ♞ Caballo Ajedrez 
 <p align="center"> 
-  <img src="https://media.tenor.com/4IJowORGMmcAAAAi/what-inside-out-2.giff" width="300"/> 
+  <img src="https://media1.tenor.com/m/wIRJdGr7mUgAAAAC/pepe-dab-pepe.gif" width="300"/> 
 </p>
 
 ---
 
 ## 📝 Descripción del Proyecto
 
-DASVP AIR es una aplicación web móvil desarrollada como parte de un reto de desarrollo front-end, en el cual se replicó el diseño proporcionado por un equipo UI/UX de una aerolínea ficticia. La aplicación contiene 9 vistas que simulan el flujo completo del usuario: desde el login hasta el historial de vuelos, pasando por el check-in, reserva, menú y pase de abordar.
+Este proyecto implementa una aplicación web sencilla e interactiva diseñada para calcular y mostrar todos los movimientos posibles de un caballo de ajedrez desde una posición dada en un tablero de 8x8 casillas. Desarrollado con HTML, CSS y JavaScript puro, la aplicación se centra en la manipulación del DOM y el manejo de eventos para ofrecer una experiencia de usuario intuitiva.
 
 ---
 
@@ -22,27 +22,13 @@ Durante la creación de esta aplicación, aprendí a:
 - Simular una navegación funcional entre vistas sin necesidad de JavaScript.
 - Integrar tipografías personalizadas y recursos visuales propios.
 
----
 
-## 💡 Requisitos del Proyecto
-
-- ✅ Utilizar únicamente **HTML y CSS** (sin frameworks ni JavaScript).
-- ✅ Implementar **9 vistas funcionales** conectadas mediante navegación.
-- ✅ Aplicar **diseño responsivo** con flexbox y/o grid.
-- ✅ Incluir **tipografías personalizadas** cargadas localmente.
-- ✅ Usar un solo archivo de estilos `style.css` centralizado.
-- ✅ Incluir animaciones, efectos `hover`, transiciones y buen contraste.
-- ✅ Publicar el proyecto en **GitHub Pages** antes de la fecha límite.
-- ✅ Subirlo a un repositorio con nombre: `Maquetacion`.
-
----
 
 ## 🔧 Tecnologías Utilizadas
 
 - HTML5
 - CSS3 (puro)
-- Tipografías locales (`@font-face`)
-- Diseño mobile-first
+- Javascript
 - Git y GitHub para control de versiones y despliegue
 
 ---
@@ -85,34 +71,66 @@ El proyecto está disponible en línea para ser probado desde cualquier disposit
 
 
 ---
-
-
-## 🧩 FUNCIONALIDADES DESTACADAS
-
-✔️ Navegación entre vistas simulada con enlaces  
-✔️ Diseño responsive adaptable a pantallas móviles  
-✔️ Efectos visuales y animaciones suaves  
-✔️ Experiencia inmersiva sin una sola línea de JavaScript  
-✔️ Código limpio y organizado por carpetas
-
----
-
 ## 🧪 CÓDIGO DESTACADO (CSS)
 
 ```
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    min-height: 100vh; 
+    margin: 0;
+    background-color: #f0f2f5; 
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px; 
+    margin-bottom: 30px; 
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+    margin-bottom: 25px;
+    flex-wrap: wrap; 
+}
 ```
 ---
 
 ## 💬 Conclusión
 
-Este proyecto fue un gran reto y una valiosa oportunidad para aplicar todos los conocimientos adquiridos sobre diseño web responsive, estructura semántica en HTML y el poder de CSS puro. Cada vista fue cuidadosamente construida para simular una experiencia real de usuario en una aerolínea, demostrando que se puede lograr una aplicación visualmente atractiva y funcional sin necesidad de JavaScript o frameworks externos.
+Este proyecto ha servido como una demostración práctica y efectiva de los fundamentos esenciales del desarrollo web frontend, específicamente en el ámbito de JavaScript, HTML y CSS. Al abordar el desafío de calcular y visualizar los movimientos de un caballo de ajedrez en una interfaz interactiva, se ha logrado construir una aplicación funcional que no solo resuelve un problema lógico específico, sino que también ofrece una experiencia de usuario clara y responsiva.
+
+Se ha reforzado la importancia de la modularidad del código a través del uso de funciones específicas para cada tarea, facilitando la lectura y el mantenimiento. Asimismo, la implementación de validaciones robustas ha subrayado la necesidad de crear aplicaciones a prueba de errores de usuario, mejorando la fiabilidad del sistema. La interacción dinámica con el DOM y el manejo de eventos han sido pilares fundamentales, evidenciando cómo JavaScript da vida a una página estática.
+
+En definitiva, este ejercicio no solo valida la capacidad de aplicar conceptos teóricos en un escenario práctico, sino que también resalta la importancia de la atención al detalle en la interfaz y la usabilidad para entregar soluciones completas y satisfactorias. El proyecto es un testimonio de la comprensión de la interacción entre las tres tecnologías clave del desarrollo web, preparando el camino para desafíos más complejos en el futuro.
 
 ---
 
 ## 🎯 Entregable Final
 
-Repositorio: [GitHub – Proyecto DASVP AIR](https://github.com/TU-USUARIO/DASVP-AIR)  
-Despliegue: [GitHub Pages – DASVP AIR](https://TU-USUARIO.github.io/DASVP-AIR/)
+Repositorio: [GitHub – Proyecto Caballo Ajedrez](https://github.com/DanielSantiagoV/caballo_de_ajedrez.git)  
+Despliegue: [GitHub Pages – Caballo Ajedrez](https://danielsantiagov.github.io/caballo_de_ajedrez/)
 
 ---
 
@@ -149,7 +167,6 @@ Despliegue: [GitHub Pages – DASVP AIR](https://TU-USUARIO.github.io/DASVP-AIR/
 ✔️ 🎯 Interfaz de usuario intuitiva y accesible  
 ✔️ 🧩 Estructura HTML semántica y ordenada  
 ✔️ 🧠 Paleta de colores coherente con variables CSS  
-✔️ 🚫 Sin uso de JavaScript, solo HTML y CSS puro  
 ✔️ 🚀 Código optimizado y desplegado en GitHub Pages  
 
 ---
