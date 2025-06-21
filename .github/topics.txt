@@ -1,0 +1,1 @@
+chess, knight, calculator, javascript, html5, css3, web-app, interactive, responsive, chess-board, game, algorithm, dom-manipulation, es6, object-oriented, frontend, web-development, educational, visualization, real-time 

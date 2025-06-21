@@ -1,129 +1,249 @@
-# ♞ Caballo Ajedrez 
+# ♞ Calculadora de Movimientos del Caballo de Ajedrez
+
 <p align="center"> 
   <img src="https://media1.tenor.com/m/wIRJdGr7mUgAAAAC/pepe-dab-pepe.gif" width="300"/> 
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="MIT License">
 </p>
 
 ---
 
 ## 📝 Descripción del Proyecto
 
-Este proyecto implementa una aplicación web sencilla e interactiva diseñada para calcular y mostrar todos los movimientos posibles de un caballo de ajedrez desde una posición dada en un tablero de 8x8 casillas. Desarrollado con HTML, CSS y JavaScript puro, la aplicación se centra en la manipulación del DOM y el manejo de eventos para ofrecer una experiencia de usuario intuitiva.
+Este proyecto implementa una aplicación web moderna e interactiva diseñada para calcular y visualizar todos los movimientos posibles de un caballo de ajedrez desde una posición dada en un tablero de 8x8 casillas. Desarrollado con HTML5, CSS3 y JavaScript ES6+, la aplicación ofrece una experiencia de usuario intuitiva y visualmente atractiva con un tablero de ajedrez interactivo.
+
+### ✨ Características Principales
+
+- **🎯 Tablero Visual Interactivo**: Tablero de ajedrez 8x8 con colores tradicionales
+- **♞ Visualización de Movimientos**: Resalta automáticamente todos los movimientos posibles
+- **📱 Diseño Responsive**: Adaptable a dispositivos móviles y de escritorio
+- **🎨 Interfaz Moderna**: Diseño elegante con gradientes y animaciones suaves
+- **⚡ Interactividad Completa**: Clic en casillas para cambiar posición del caballo
+- **📊 Contador de Movimientos**: Muestra en tiempo real el número de movimientos posibles
+- **🔄 Funcionalidad de Limpieza**: Botón para reiniciar el tablero
+- **⌨️ Atajos de Teclado**: Soporte para Enter y Ctrl+R
 
 ---
 
-## 📚 Aprendizajes Obtenidos
+## 🚀 Funcionalidades Implementadas
 
-Durante la creación de esta aplicación, aprendí a:
+### Core Features
+- ✅ Cálculo preciso de movimientos del caballo en forma de "L"
+- ✅ Validación robusta de coordenadas de entrada
+- ✅ Visualización en tiempo real en el tablero
+- ✅ Interfaz gráfica intuitiva y moderna
+- ✅ Diseño responsive para todos los dispositivos
 
-- Utilizar **HTML semántico** para una estructura clara y accesible.
-- Aplicar **CSS puro y avanzado**, aprovechando animaciones, efectos y variables CSS.
-- Centralizar estilos en un solo archivo optimizando mantenimiento y rendimiento.
-- Diseñar interfaces **responsive**, adaptables a cualquier dispositivo móvil.
-- Simular una navegación funcional entre vistas sin necesidad de JavaScript.
-- Integrar tipografías personalizadas y recursos visuales propios.
+### Advanced Features
+- ✅ **Programación Orientada a Objetos**: Código estructurado en clases
+- ✅ **Event Handling Avanzado**: Manejo completo de eventos del DOM
+- ✅ **Animaciones CSS**: Efectos visuales suaves y atractivos
+- ✅ **Gestión de Estado**: Control centralizado del estado de la aplicación
+- ✅ **Error Handling**: Manejo elegante de errores de usuario
+- ✅ **Accesibilidad**: Interfaz accesible y fácil de usar
 
-
+---
 
 ## 🔧 Tecnologías Utilizadas
 
-- HTML5
-- CSS3 (puro)
-- Javascript
-- Git y GitHub para control de versiones y despliegue
+### Frontend
+- **HTML5**: Estructura semántica y moderna
+- **CSS3**: 
+  - Grid y Flexbox para layouts
+  - Variables CSS (Custom Properties)
+  - Animaciones y transiciones
+  - Diseño responsive con media queries
+- **JavaScript ES6+**:
+  - Clases y programación orientada a objetos
+  - Arrow functions y destructuring
+  - Event handling avanzado
+  - DOM manipulation moderna
+
+### Herramientas de Desarrollo
+- **Git y GitHub**: Control de versiones y despliegue
+- **Google Fonts**: Tipografía Poppins para mejor legibilidad
 
 ---
 
 ## 🗂️ Estructura del Proyecto
 
 ```
-MAQUETACION_DASVP_AIR/
+caballo_de_ajedrez/
 │
-├── 📄 CSS    # Archivo CSS principal
-├── 📄 JS    # Archivos JS 
-├── 📄 IMG     # Archivo de Imagenes
-├── 📄 INDEX.HTML   # Archivo HTML principal
-└── 📄 README.md       # Documentación del proyecto
+├── 📄 index.html          # Archivo HTML principal
+├── 📁 css/
+│   └── 📄 style.css       # Estilos CSS modernos y responsivos
+├── 📁 js/
+│   └── 📄 script.js       # Lógica JavaScript en clases
+├── 📁 img/
+│   └── 📄 caballoajedrez.png  # Icono del proyecto
+├── 📄 README.md           # Documentación en español
+├── 📄 README_EN.md        # Documentación en inglés
+└── 📄 LICENSE             # Licencia MIT
 ```
 
+---
+
+## 🎮 Cómo Usar la Aplicación
+
+### Método 1: Inputs Numéricos
+1. Ingresa la fila (1-8) en el campo "Fila"
+2. Ingresa la columna (1-8) en el campo "Columna"
+3. Haz clic en "♞ Calcular Movimientos"
+4. Observa los resultados en el tablero y en la lista
+
+### Método 2: Clic Directo en el Tablero
+1. Haz clic directamente en cualquier casilla del tablero
+2. La posición se actualiza automáticamente
+3. Los movimientos se calculan y muestran instantáneamente
+
+### Funciones Adicionales
+- **🔄 Limpiar**: Reinicia el tablero a la posición central (4,4)
+- **⌨️ Enter**: Presiona Enter en cualquier input para calcular
+- **⌨️ Ctrl+R**: Atajo de teclado para limpiar el tablero
+
+---
+
+## 🎨 Diseño y UX
+
+### Paleta de Colores
+- **Primario**: #2c3e50 (Azul oscuro)
+- **Secundario**: #3498db (Azul claro)
+- **Acento**: #e74c3c (Rojo)
+- **Éxito**: #27ae60 (Verde)
+- **Fondo**: Gradiente púrpura-azul
+
+### Características de Diseño
+- **🎯 Mobile-First**: Diseño optimizado para móviles
+- **🎨 Animaciones Suaves**: Transiciones de 0.3s en todos los elementos
+- **📱 Responsive Grid**: Layout adaptativo con CSS Grid
+- **🎭 Efectos Hover**: Interacciones visuales en botones y casillas
+- **♿ Accesibilidad**: Contraste adecuado y navegación por teclado
+
+---
+
+## 💻 Arquitectura del Código
+
+### Clase Principal: `ChessKnightCalculator`
+```javascript
+class ChessKnightCalculator {
+    constructor() {
+        this.boardSize = 8;
+        this.currentPosition = { row: 4, col: 4 };
+        this.possibleMoves = [];
+        this.board = null;
+    }
+    
+    // Métodos principales:
+    - init()                    // Inicialización
+    - calculateMoves()          // Cálculo de movimientos
+    - createChessboard()        // Generación del tablero
+    - updateDisplay()           // Actualización visual
+    - handleBoardClick()        // Manejo de clics
+}
+```
+
+### Características del Código
+- **🔧 Modular**: Código organizado en métodos específicos
+- **🛡️ Robusto**: Validación completa de inputs
+- **⚡ Eficiente**: Algoritmo optimizado para cálculos
+- **📖 Legible**: Comentarios detallados y nombres descriptivos
+- **🔄 Mantenible**: Estructura clara y extensible
 
 ---
 
 ## 🌐 Publicación en GitHub Pages
 
-El proyecto está disponible en línea para ser probado desde cualquier dispositivo móvil:
+El proyecto está disponible en línea para ser probado desde cualquier dispositivo:
 
-🔗 **[Ver Aplicación en Vivo](https://TU-USUARIO.github.io/DASVP-AIR/)**
-
-
+🔗 **[Ver Aplicación en Vivo](https://danielsantiagov.github.io/caballo_de_ajedrez/)**
 
 ---
-
-
 
 ## 👨‍💻 Autor del Proyecto
 
 | Nombre        | Info                                |
 |---------------|-------------------------------------|
 | 🧑 Daniel Santiago | Estudiante de Campuslands |
-| 🎓 Formación      | Desarrollo  |
-| 💻 Enfoque        | HTML, CSS, diseño UI responsivo |
+| 🎓 Formación      | Desarrollo Web Full Stack |
+| 💻 Enfoque        | JavaScript, React, Node.js |
 | 📍 Ubicación      | Piedecuesta, Santander - Colombia |
 
-
 ---
-## 🧪 CÓDIGO DESTACADO (CSS)
 
-```
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; 
-    min-height: 100vh; 
-    margin: 0;
-    background-color: #f0f2f5; 
-    padding: 20px;
-    box-sizing: border-box; 
+## 🧪 CÓDIGO DESTACADO
+
+### CSS Moderno con Variables
+```css
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
 }
 
-.container {
-    background-color: #ffffff;
-    padding: 30px 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 500px; 
-    margin-bottom: 30px; 
-    box-sizing: border-box;
-}
-
-h1 {
-    color: #333;
-    margin-bottom: 25px;
-    font-size: 2em;
-    font-weight: 600;
-}
-
-.input-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px; 
-    margin-bottom: 25px;
-    flex-wrap: wrap; 
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    border: 3px solid var(--primary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-hover);
 }
 ```
+
+### JavaScript Orientado a Objetos
+```javascript
+class ChessKnightCalculator {
+    getKnightMoves(row, col) {
+        const moves = [];
+        const knightMoves = [
+            [-2, -1], [-2, 1], [-1, -2], [-1, 2],
+            [1, -2], [1, 2], [2, -1], [2, 1]
+        ];
+
+        for (const [rowOffset, colOffset] of knightMoves) {
+            const newRow = row + rowOffset;
+            const newCol = col + colOffset;
+
+            if (this.isValidCoordinate(newRow, newCol)) {
+                moves.push({ row: newRow, col: newCol });
+            }
+        }
+        return moves;
+    }
+}
+```
+
 ---
 
 ## 💬 Conclusión
 
-Este proyecto ha servido como una demostración práctica y efectiva de los fundamentos esenciales del desarrollo web frontend, específicamente en el ámbito de JavaScript, HTML y CSS. Al abordar el desafío de calcular y visualizar los movimientos de un caballo de ajedrez en una interfaz interactiva, se ha logrado construir una aplicación funcional que no solo resuelve un problema lógico específico, sino que también ofrece una experiencia de usuario clara y responsiva.
+Este proyecto representa una evolución significativa en el desarrollo web frontend, demostrando la capacidad de crear aplicaciones interactivas y visualmente atractivas utilizando tecnologías web estándar. La implementación de un tablero de ajedrez visual con cálculo de movimientos en tiempo real muestra el potencial de JavaScript moderno para crear experiencias de usuario ricas y educativas.
 
-Se ha reforzado la importancia de la modularidad del código a través del uso de funciones específicas para cada tarea, facilitando la lectura y el mantenimiento. Asimismo, la implementación de validaciones robustas ha subrayado la necesidad de crear aplicaciones a prueba de errores de usuario, mejorando la fiabilidad del sistema. La interacción dinámica con el DOM y el manejo de eventos han sido pilares fundamentales, evidenciando cómo JavaScript da vida a una página estática.
+### Logros Técnicos
+- ✅ **Arquitectura Sólida**: Código bien estructurado y mantenible
+- ✅ **UX Excepcional**: Interfaz intuitiva y visualmente atractiva
+- ✅ **Performance Optimizada**: Cálculos eficientes y renderizado rápido
+- ✅ **Responsive Design**: Funciona perfectamente en todos los dispositivos
+- ✅ **Accesibilidad**: Interfaz accesible para todos los usuarios
 
-En definitiva, este ejercicio no solo valida la capacidad de aplicar conceptos teóricos en un escenario práctico, sino que también resalta la importancia de la atención al detalle en la interfaz y la usabilidad para entregar soluciones completas y satisfactorias. El proyecto es un testimonio de la comprensión de la interacción entre las tres tecnologías clave del desarrollo web, preparando el camino para desafíos más complejos en el futuro.
+### Aprendizajes Clave
+- Programación orientada a objetos en JavaScript
+- Manipulación avanzada del DOM
+- Diseño responsive con CSS Grid y Flexbox
+- Gestión de estado en aplicaciones web
+- Implementación de animaciones y efectos visuales
+- Validación robusta de datos de usuario
+
+El proyecto no solo cumple con los requisitos funcionales, sino que también establece un estándar de calidad en términos de diseño, usabilidad y experiencia de usuario, preparando el camino para desarrollos más complejos en el futuro.
 
 ---
 
@@ -157,17 +277,30 @@ Despliegue: [GitHub Pages – Caballo Ajedrez](https://danielsantiagov.github.io
 
 ---
 
-## ✨ Características Destacadas del Proyecto DASVP AIR
+## ✨ Características Destacadas del Proyecto
 
-✔️ 🎨 Diseño mobile-first moderno y profesional  
-✔️ 📱 100% responsive en dispositivos móviles  
-✔️ 💫 Transiciones y efectos visuales suaves con CSS  
-✔️ 🧭 Navegación fluida entre las 9 vistas enlazadas  
-✔️ 🔤 Tipografías personalizadas integradas localmente  
-✔️ 🎯 Interfaz de usuario intuitiva y accesible  
-✔️ 🧩 Estructura HTML semántica y ordenada  
-✔️ 🧠 Paleta de colores coherente con variables CSS  
-✔️ 🚀 Código optimizado y desplegado en GitHub Pages  
+✔️ 🎨 **Diseño Moderno**: Interfaz elegante con gradientes y animaciones  
+✔️ 📱 **100% Responsive**: Optimizado para móviles, tablets y desktop  
+✔️ ♞ **Tablero Visual**: Representación gráfica interactiva del tablero  
+✔️ ⚡ **Cálculos en Tiempo Real**: Movimientos calculados instantáneamente  
+✔️ 🎯 **Interactividad Completa**: Clic en casillas para cambiar posición  
+✔️ 🛡️ **Validación Robusta**: Manejo completo de errores de usuario  
+✔️ 🔧 **Código Modular**: Arquitectura orientada a objetos  
+✔️ 🎭 **Animaciones Suaves**: Transiciones y efectos visuales  
+✔️ ♿ **Accesibilidad**: Navegación por teclado y contraste adecuado  
+✔️ 🚀 **Performance Optimizada**: Código eficiente y rápido  
+
+---
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+---
+
+## 🌍 Documentación en Otros Idiomas
+
+- 🇺🇸 [English Documentation](README_EN.md)
 
 ---
 

@@ -1,0 +1,1 @@
+♞ Interactive Chess Knight Movement Calculator - A modern web app that calculates and visualizes all possible moves of a chess knight on an 8x8 board. Built with HTML5, CSS3, and JavaScript ES6+ featuring a responsive design and real-time calculations. 

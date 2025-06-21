@@ -3,25 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caballo de Ajedrez</title>
+    <title>♞ Calculadora de Movimientos del Caballo de Ajedrez</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/caballoajedrez.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Caballo de Ajedrez</h1>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>♞ Calculadora de Movimientos del Caballo</h1>
+            <p class="subtitle">Visualiza todos los movimientos posibles del caballo en el tablero</p>
+        </header>
 
-        <div class="input-group">
-            <label for="input-fila">Fila:</label>
-            <input type="number" id="input-fila" min="1" max="8" value="1">
-            <label for="input-columna">Columna:</label>
-            <input type="number" id="input-columna" min="1" max="8" value="1">
-            <button id="btn-calcular">Calcular Movimientos</button>
-        </div>
+        <main class="main-content">
+            <div class="control-panel">
+                <div class="input-section">
+                    <h3>Posición del Caballo</h3>
+                    <div class="coordinate-inputs">
+                        <div class="input-group">
+                            <label for="input-fila">Fila (1-8):</label>
+                            <input type="number" id="input-fila" min="1" max="8" value="4" placeholder="1-8">
+                        </div>
+                        <div class="input-group">
+                            <label for="input-columna">Columna (1-8):</label>
+                            <input type="number" id="input-columna" min="1" max="8" value="4" placeholder="1-8">
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button id="btn-calcular" class="btn-primary">♞ Calcular Movimientos</button>
+                        <button id="btn-limpiar" class="btn-secondary">🔄 Limpiar</button>
+                    </div>
+                </div>
 
-        <div id="resultados-movimientos" class="resultados-panel">
+                <div class="info-section">
+                    <h3>Información</h3>
+                    <div class="info-content">
+                        <p><strong>Movimientos del Caballo:</strong></p>
+                        <p>El caballo se mueve en forma de "L": 2 casillas en una dirección y luego 1 casilla perpendicular.</p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Movimientos posibles:</span>
+                                <span id="contador-movimientos" class="stat-value">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="chessboard-section">
+                <div class="chessboard-container">
+                    <div id="tablero-ajedrez" class="chessboard">
+                        <!-- El tablero se genera dinámicamente con JavaScript -->
+                    </div>
+                    <div class="chessboard-labels">
+                        <div class="row-labels">
+                            <span>8</span><span>7</span><span>6</span><span>5</span>
+                            <span>4</span><span>3</span><span>2</span><span>1</span>
+                        </div>
+                        <div class="column-labels">
+                            <span>A</span><span>B</span><span>C</span><span>D</span>
+                            <span>E</span><span>F</span><span>G</span><span>H</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-section">
+                <div id="resultados-movimientos" class="results-panel">
+                    <div class="results-header">
+                        <h3>Movimientos Posibles</h3>
+                    </div>
+                    <div class="results-content">
+                        <p class="placeholder-text">Ingresa las coordenadas y haz clic en "Calcular Movimientos" para ver los resultados.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <p>Desarrollado con ♥ por Daniel Santiago Vinasco</p>
+        </footer>
     </div>
+
     <script src="./js/script.js"></script>
 </body>
 </html>
